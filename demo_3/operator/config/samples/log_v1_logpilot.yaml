@@ -1,0 +1,15 @@
+apiVersion: log.aiops.com/v1
+kind: LogPilot
+metadata:
+  labels:
+    app.kubernetes.io/name: operator
+    app.kubernetes.io/managed-by: kustomize
+  name: logpilot-sample
+spec:
+  lokiURL: "http://101.32.3.224:31000" # get from iac_app k3s output
+  lokiPromQL: '{app="payment"} |= `ERROR`'
+  llmEndpoint: "http://101.32.3.224:31143/v1"
+  llmToken: "ollama"
+  llmModel: "qwen:0.5b"
+  feishuWebhook: "https://open.feishu.cn/open-apis/bot/v2/hook/d5e267dc-a92f-43d3-bc45-106b5e718c49"
+

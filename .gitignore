@@ -1,0 +1,8 @@
+.DS_Store
+terraform.tfstate
+terraform.tfstate.*backup
+.terraform
+myenv
+ragflow
+translation-agent
+app.tar
