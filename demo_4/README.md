@@ -101,6 +101,7 @@ $ make manifests
 ```
 
 update api/v1/raglogpilot_types.go
+
 update internal/controller/raglogpilot_controller.go
 
 ```

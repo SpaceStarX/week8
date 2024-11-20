@@ -120,6 +120,7 @@ $ make manifests
 ```
 
 update /api/v1/logpilot_types.go
+
 update internal/controller/logpilot_controller.go
 
 ```
